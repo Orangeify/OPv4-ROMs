@@ -192,7 +192,7 @@ class EmulatorJS {
             console.warn("Using EmulatorJS beta. Not checking for updates. This instance may be out of date. Using stable is highly recommended unless you build and ship your own cores.");
             return;
         }
-        fetch("/data/version.json").then(response => {
+        fetch("https://cdn.emulatorjs.org/stable/data/version.json").then(response => {
             if (response.ok) {
                 response.text().then(body => {
                     let version = JSON.parse(body);
