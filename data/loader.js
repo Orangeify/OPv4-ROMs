@@ -56,7 +56,7 @@ async function filesMissing(file) {
     const errorMessage = `Failed to load ${file} because it's likely that the minified files are missing.
 To fix this you have 3 options:
   1. You can download the zip from the latest release here: https://github.com/EmulatorJS/EmulatorJS/releases/latest - Recommended
-  2. You can download the zip from here: https://cdn.emulatorjs.org/stable/data/emulator.min.zip and extract it to the data/ folder
+  2. You can download the zip from here: /data/emulator.min.zip and extract it to the data/ folder
   3. You can build the files by running "npm i && npm run build" in the data/minify folder.`;
     console[minifiedFailed ? "warn" : "error"](errorMessage);
     if (minifiedFailed) {
