@@ -39,7 +39,7 @@
         let parts = [];
         for (let i = start; i <= end; i++) {
           let padded = String(i).padStart((end + "").length, "0");
-          parts.push(file + ".part" + padded);
+          parts.push(file + ".part_" + padded);
         }
         return parts;
       }
